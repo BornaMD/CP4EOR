@@ -1,0 +1,25 @@
+import random
+num = random.randint(1, 9)
+while True:
+ while True:
+  try:
+    m=int(input("Guess a number between 1 and 9:"))
+    if (m>0 & m<10):
+      break
+    else:
+      print("Oops! The number should be between 1 and 9. Please try again.")
+  except Exception:
+    print("Oops! That was no valid number. Please try again.")
+  except Exception:
+     if str(input("exit")):
+   
+ while True: 
+   if (m == num):
+    print("Correct!")
+    break
+   elif (m>num): 
+    print("You guessed too high!")
+    break
+   else: 
+    print("You guessed too low!")
+    break
